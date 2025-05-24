@@ -71,12 +71,12 @@ def get_answer_from_ollama(prompt: str) -> str:
     return response["message"]["content"].strip()
 
 # --- Streamlit UI ---
-st.title("📚 API Docs Q&A Assistant (Ollama + ChromaDB)")
+st.title("API Docs Q&A Assistant (Ollama + ChromaDB)")
 
 question = st.text_input("Ask a question about the API docs:", placeholder="e.g. What is a PaymentIntent?")
 
 if st.button("Get Answer") and question:
-    with st.spinner("🔍 Retrieving relevant chunks and generating answer..."):
+    with st.spinner("Retrieving relevant chunks and generating answer..."):
         chunks = retrieve_relevant_chunks(question)
         prompt = build_prompt(question, chunks)
         answer = get_answer_from_ollama(prompt)
@@ -84,6 +84,6 @@ if st.button("Get Answer") and question:
         st.subheader("Answer:")
         st.markdown(answer)
 
-        with st.expander("🔎 Show Context Chunks"):
+        with st.expander("Show Context Chunks"):
             for i, chunk in enumerate(chunks):
                 st.markdown(f"**Chunk {i+1}:**\n```text\n{chunk}\n```")
