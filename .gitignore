@@ -1,3 +1,5 @@
 .env
 message.txt
 docs/
+.sqlite3
+chroma_store/

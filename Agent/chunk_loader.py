@@ -2,9 +2,10 @@ import os
 import re
 from bs4 import BeautifulSoup
 import markdown2
-
+from dotenv import load_dotenv
+load_dotenv()
 # Config
-DOCS_PATH = "D:\\Masrafe\\Coding\\Git_Hub_code\\ml_project\\Api_Doc_Ai_agent\\Agent\\docs\\Stripe API Reference.html"  # Can be .md or .html
+DOCS_PATH = os.getenv("DOCS_PATH")
 
 def load_document(file_path):
     ext = os.path.splitext(file_path)[1]
@@ -28,7 +29,7 @@ def markdown_to_text(md_content):
 
 def chunk_text(text, max_chars=1000, overlap=200):
     """Split text by section headers and paragraphs into overlapping chunks."""
-    paragraphs = re.split(r'\n{2,}', text)  # split by double newlines
+    paragraphs = re.split(r'\n{2,}', text)
     chunks = []
     current_chunk = ""
 
@@ -50,7 +51,7 @@ if __name__ == "__main__":
     raw_text = load_document(DOCS_PATH)
     chunks = chunk_text(raw_text)
 
-    print(f"✅ Loaded and chunked {DOCS_PATH}")
+    print(f"Loaded and chunked {DOCS_PATH}")
     print(f"Generated {len(chunks)} chunks.\n")
 
     # Sample output

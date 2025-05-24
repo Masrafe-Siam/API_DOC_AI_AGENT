@@ -1,0 +1,10 @@
+beautifulsoup4
+markdown2
+lxml
+openai
+chromadb
+tiktoken
+python-dotenv
+sentence-transformers
+tf-keras
+numpy
