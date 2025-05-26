@@ -55,6 +55,25 @@ git clone https://github.com/Masrafe-Siam/API_DOC_AI_AGENT
 ```
 
 ## 2. Go to the Agent Directory
+
 ```bash
 cd Agent
+```
+
+## 3. Set Up Environment
+
+```bash
+python -m venv venv
+
+# windows
+.\venv\Scripts\activate
+
+# macOS/Linux
+source venv/bin/activate
+```
+
+## 4. Install Dependencies
+
+```bash
+pip install -r requirements.txt
 ```
