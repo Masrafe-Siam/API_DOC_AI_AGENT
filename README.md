@@ -188,6 +188,8 @@ python qa_agent_openai.py
 
 ## How the app is working
 
+### Step 1 : Data Preparation
+
 --store the API documention file in docs directory
 
 --Support .html and .md file type (extendable)
@@ -196,15 +198,37 @@ python qa_agent_openai.py
 
 --chunking the document into samller group
 
+### Step 2 : Embedding & Storage
+
 --used Embedding Model SentenceTransformer (e.g., all-MiniLM-L6-v2)
 
 --store those chunks into the Vector Database (used ChromaDB)
+
+### Step 3 : Q&A Loop
 
 --local llm model for question and answer season (used ollama)
 
 --in old arch there is also openai llm model but needed gpt-4o for that
 
 --streamlit for web ui interaction
+
+1.Accept natural language question from user
+
+2.Embed the question and perform semantic search in the vector DB
+
+3.Retrieve top-k relevant documentation chunks
+
+4.Construct a prompt with user question + retrieved context
+
+5.Send prompt to LLM and return answer
+
+# ✨ Example Queries
+
+--How do I authenticate API requests?
+
+--What parameters are needed for the create_charge endpoint?
+
+--Is rate limiting applied per user or per account?
 
 # 🧩 Design Choices
 
