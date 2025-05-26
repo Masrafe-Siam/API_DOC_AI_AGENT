@@ -178,13 +178,29 @@ python qa_web_app.py
 python qa_agent_openai.py
 ```
 
+## API documentation
 
+For this project i used stripe API documentation https://docs.stripe.com/api.
+Firstly i save this document as .html file in the docs directory and build API_DOC_AI_AGENT with the document.
+** You can use any type of documentation (.html or .md) file.
+
+## How the app is working
+
+--store the API documention file in docs directory
+--Support .html and .md file type (extendable)
+--load the document
+--chunking the document into samller group
+--used Embedding Model SentenceTransformer (e.g., all-MiniLM-L6-v2)
+--store those chunks into the Vector Database (used ChromaDB)
+--local llm model for question and answer season (used ollama)
+--in old arch there is also openai llm model but needed gpt-4o for that
+--streamlit for web ui interaction
 
 # 🧩 Design Choices
 
 -Vector DB = ChromaDB: Lightweight, Python-native vector database optimized for local storage and fast similarity search in RAG setups.
 
--Embedding model = SentenceTransformer: Generates high-quality dense embeddings from text using transformer models, ideal for semantic search.
+-Embedding model = SentenceTransformer: Generates high-quality dense embeddings from text using transformer models, ideal for semantic search. (e.g., all-MiniLM-L6-v2)
 
 -LLM = Ollama: Runs large language models like LLaMA locally with minimal setup, ensuring privacy and offline capability.
 
