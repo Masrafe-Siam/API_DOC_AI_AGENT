@@ -102,7 +102,7 @@ touch .env
 echo "OPENAI_MODEL_NAME= gpt-3.5-turbo" >> .env
 # for local llm model
 echo "OLLAMA_MODEL= llama3" >> .env  
-# Enter you OPENAI key
+# Enter you OPENAI key within ""
 echo 'OPENAI_API_KEY = "sk-proj-...."' >> .env  
 # paste your path for the saved document file within ""
 echo 'DOCS_PATH = "..."' >> .env  
@@ -121,5 +121,21 @@ Download and Install https://ollama.com/
 ```bash
 # open cmd terminal & activate ollama
 ollama run llama3.2
+```
+
+## 10. Run the agent
+
+```bash
+# go to the scripts directory
+cd scripts
+```
+```bash
+# run the main.py in terminal
+#For cli interface
+python main.py
+```
+```bash
+#For streamlit Web UI
+streamlit run qa_web_app.py
 ```
 
