@@ -77,3 +77,15 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+
+## 5. Make Directory For Docuuments and Vector DB storage
+
+```bash
+# for .html / .md documents files
+mkdir docs
+```
+```bash
+# for chromaDB storage
+mkdir chroma_store
+```
+
