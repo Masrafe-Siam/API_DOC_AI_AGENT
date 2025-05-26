@@ -136,6 +136,45 @@ python main.py
 ```
 ```bash
 #For streamlit Web UI
-streamlit run qa_web_app.py
+streamlit run main.py
 ```
+
+### Pervious Version
+
+```bash
+# if you are in the scripts directory go back to Agent directory (if you are in Agent directory SKIP this)
+cd ..
+```
+```bash
+# go to old_arch directory
+cd old_arch
+```
+```bash
+# run the chunk_loader.py to load and chunk the documents
+python chunk_loder.py
+```
+```bash
+# run the embed_store.py to create chunk and load it to chromaDB
+python embed_store.py
+```
+```bash
+# run the qa_agent.py for Question and Answer
+python qa_agent.py
+```
+```bash
+# run the qa_agent_ollama.py for local llm model Ollama
+python qa_agent_ollama.py
+```
+```bash
+# run the qa_web_app.py for Streamlit web ul using ollama
+python qa_web_app.py
+```
+```bash
+# run the qa_agent_openai.py for openai llm model
+# warning: wont work if you use "OPENAI_MODEL_NAME= gpt-3.5-turbo"
+# to use this you will need "OPENAI_MODEL_NAME=gpt-4o" and a 'OPENAI_API_KEY = "sk-proj-...."'
+# if you have these set this into .env file and then run
+python qa_agent_openai.py
+```
+
 
