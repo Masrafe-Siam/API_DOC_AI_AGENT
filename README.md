@@ -142,7 +142,8 @@ streamlit run main.py
 ### Pervious Version
 
 ```bash
-# if you are in the scripts directory go back to Agent directory (if you are in Agent directory SKIP this)
+# if you are in the scripts directory go back to Agent directory 
+#if you are in Agent directory SKIP this
 cd ..
 ```
 ```bash
@@ -178,3 +179,26 @@ python qa_agent_openai.py
 ```
 
 
+
+# 🧩 Design Choices
+
+-Vector DB = ChromaDB: Lightweight, Python-native vector database optimized for local storage and fast similarity search in RAG setups.
+
+-Embedding model = SentenceTransformer: Generates high-quality dense embeddings from text using transformer models, ideal for semantic search.
+
+-LLM = Ollama: Runs large language models like LLaMA locally with minimal setup, ensuring privacy and offline capability.
+
+-Frontend = Streamlit: Simple and fast way to build interactive web apps in Python, ideal for prototyping and user-friendly interfaces.
+
+-CLI support: Allows command-line interaction for power users and automation, enabling flexible access to core features without a GUI.
+
+# 📬 Contact
+MASRAFE BIN HANNAN SIAM
+
+📧 Personal     : masrafesiammbhs1633@gmail.com
+
+📧 Institutional : siam35-1022@diu.edu.bd
+
+[🔗 LinkedIn Profile](https://www.linkedin.com/in/masrafe-siam-44108b202/)
+
+[🔗 GitHub Profile](https://github.com/Masrafe-Siam)
