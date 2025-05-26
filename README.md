@@ -243,12 +243,14 @@ python qa_agent_openai.py
 -CLI support: Allows command-line interaction for power users and automation, enabling flexible access to core features without a GUI.
 
 # 🧱 Tech Stack
-Component	Choice(s)
-Language	Python
-Vector DB	ChromaDB 
-Embedding	Sentence Transformers (all-MiniLM-L6-v2)
-LLM	OpenAI GPT-3.5/GPT-4, local models via Ollama
-Interface	CLI (default), Streamlit
+| **Component** | **Choice(s)**                                                            |
+| ------------- | ------------------------------------------------------------------------ |
+| **Language**  | Python                                                                   |
+| **Vector DB** | ChromaDB                        |
+| **Embedding** | Sentence Transformers (e.g., `all-MiniLM-L6-v2`)|
+| **LLM**       | OpenAI GPT-3.5/GPT-4, local models via Ollama       |
+| **Interface** | CLI (default), Streamlit                              |
+
 
 # 📬 Contact
 MASRAFE BIN HANNAN SIAM
