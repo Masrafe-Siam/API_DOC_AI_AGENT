@@ -99,14 +99,14 @@ touch .env
 
 ```bash
 # chage the key if you have gpt-4 "OPENAI_MODEL_NAME=gpt-4o"
-echo "OPENAI_MODEL_NAME=gpt-3.5-turbo" >> .env
+echo "OPENAI_MODEL_NAME= gpt-3.5-turbo" >> .env
 # for local llm model
-echo "OLLAMA_MODEL=llama3" >> .env  
+echo "OLLAMA_MODEL= llama3" >> .env  
 # Enter you OPENAI key
 echo "OPENAI_API_KEY = "sk-proj-...."" >> .env  
-# use this if using stripe Api reference.html file or use your desired file path
-echo "DOCS_PATH = ".\\Api_Doc_Ai_agent\\Agent\\docs\\Stripe API Reference.html"" >> .env  
-# used for choraDB storage
-echo "CHROMA_PERSIST_DIR = ".\\Api_Doc_Ai_agent\\Agent\\chroma_store"" >> .env 
+# paste your path for the saved document file within ""
+echo "DOCS_PATH = "..." " >> .env  
+# paste your choraDB storage directory path within ""
+echo "CHROMA_PERSIST_DIR = "..." " >> .env 
 ```
 
