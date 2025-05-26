@@ -98,10 +98,15 @@ touch .env
 ## 7 . Add Environment Variables
 
 ```bash
-echo "OPENAI_MODEL_NAME=gpt-3.5-turbo" >> .env  # use gpt-4o
-echo "OLLAMA_MODEL=llama3" >> .env  # for local llm model
-echo "OPENAI_API_KEY = "sk-proj-...."" >> .env  # Enter you OPENAI key
-echo "DOCS_PATH = ".\\Api_Doc_Ai_agent\\Agent\\docs\\Stripe API Reference.html"" >> .env  # use this if using stripe Api reference.html file
-echo "CHROMA_PERSIST_DIR = ".\\Api_Doc_Ai_agent\\Agent\\chroma_store"" >> .env #used for choraDB storage
+# chage the key if you have gpt-4 "OPENAI_MODEL_NAME=gpt-4o"
+echo "OPENAI_MODEL_NAME=gpt-3.5-turbo" >> .env
+# for local llm model
+echo "OLLAMA_MODEL=llama3" >> .env  
+# Enter you OPENAI key
+echo "OPENAI_API_KEY = "sk-proj-...."" >> .env  
+# use this if using stripe Api reference.html file or use your desired file path
+echo "DOCS_PATH = ".\\Api_Doc_Ai_agent\\Agent\\docs\\Stripe API Reference.html"" >> .env  
+# used for choraDB storage
+echo "CHROMA_PERSIST_DIR = ".\\Api_Doc_Ai_agent\\Agent\\chroma_store"" >> .env 
 ```
 
