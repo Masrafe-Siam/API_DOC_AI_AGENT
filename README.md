@@ -180,20 +180,30 @@ python qa_agent_openai.py
 
 ## API documentation
 
-For this project i used stripe API documentation https://docs.stripe.com/api.
-Firstly i save this document as .html file in the docs directory and build API_DOC_AI_AGENT with the document.
+-For this project i used stripe API documentation https://docs.stripe.com/api .
+
+-Firstly i save this document as .html file in the docs directory and build API_DOC_AI_AGENT with the document.
+
 ** You can use any type of documentation (.html or .md) file.
 
 ## How the app is working
 
 --store the API documention file in docs directory
+
 --Support .html and .md file type (extendable)
+
 --load the document
+
 --chunking the document into samller group
+
 --used Embedding Model SentenceTransformer (e.g., all-MiniLM-L6-v2)
+
 --store those chunks into the Vector Database (used ChromaDB)
+
 --local llm model for question and answer season (used ollama)
+
 --in old arch there is also openai llm model but needed gpt-4o for that
+
 --streamlit for web ui interaction
 
 # 🧩 Design Choices
