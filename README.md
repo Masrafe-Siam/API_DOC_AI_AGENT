@@ -15,7 +15,7 @@ and concise answer based only on that retrieved context. This is a practical app
 the Retrieval-Augmented Generation (RAG) pattern with an agentic decision-making
 component (deciding what context is relevant).
 
-## Project Structure
+# 📁 Project Structure
 
 ```
 .
@@ -46,7 +46,7 @@ component (deciding what context is relevant).
 
 ```
 
-# 🚀 Getting Started
+# 🛠️ Getting Started
 
 ## 1. Clone the Repository
 
@@ -139,7 +139,7 @@ python main.py
 streamlit run main.py
 ```
 
-### Pervious Version
+## Pervious Version
 
 ```bash
 # if you are in the scripts directory go back to Agent directory 
@@ -178,7 +178,7 @@ python qa_web_app.py
 python qa_agent_openai.py
 ```
 
-## API documentation
+# 🚀 API documentation
 
 -For this project i used stripe API documentation https://docs.stripe.com/api .
 
@@ -186,7 +186,7 @@ python qa_agent_openai.py
 
 ** You can use any type of documentation (.html or .md) file.
 
-## How the app is working
+# 🧪 How the app is working
 
 ### Step 1 : Data Preparation
 
