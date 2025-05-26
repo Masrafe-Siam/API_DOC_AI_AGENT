@@ -243,6 +243,7 @@ python qa_agent_openai.py
 -CLI support: Allows command-line interaction for power users and automation, enabling flexible access to core features without a GUI.
 
 # 🧱 Tech Stack
+
 | **Component** | **Choice(s)**                                                            |
 | ------------- | ------------------------------------------------------------------------ |
 | **Language**  | Python                                                                   |
@@ -251,6 +252,15 @@ python qa_agent_openai.py
 | **LLM**       | OpenAI GPT-3.5/GPT-4, local models via Ollama       |
 | **Interface** | CLI (default), Streamlit                              |
 
+# 🧠 Design Highlights
+
+--RAG Pattern: Combines retrieval and generation for grounded responses
+
+--Modularity: Swap out embedding models, vector DBs, or LLMs easily
+
+--Efficiency: Works locally with fast sentence transformers
+
+--Transparency: Context shown in logs or UI to ensure traceability
 
 # 📬 Contact
 MASRAFE BIN HANNAN SIAM
