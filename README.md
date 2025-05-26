@@ -242,6 +242,14 @@ python qa_agent_openai.py
 
 -CLI support: Allows command-line interaction for power users and automation, enabling flexible access to core features without a GUI.
 
+# 🧱 Tech Stack
+Component	Choice(s)
+Language	Python
+Vector DB	ChromaDB 
+Embedding	Sentence Transformers (all-MiniLM-L6-v2)
+LLM	OpenAI GPT-3.5/GPT-4, local models via Ollama
+Interface	CLI (default), Streamlit
+
 # 📬 Contact
 MASRAFE BIN HANNAN SIAM
 
@@ -252,3 +260,4 @@ MASRAFE BIN HANNAN SIAM
 [🔗 LinkedIn Profile](https://www.linkedin.com/in/masrafe-siam-44108b202/)
 
 [🔗 GitHub Profile](https://github.com/Masrafe-Siam)
+
