@@ -103,10 +103,23 @@ echo "OPENAI_MODEL_NAME= gpt-3.5-turbo" >> .env
 # for local llm model
 echo "OLLAMA_MODEL= llama3" >> .env  
 # Enter you OPENAI key
-echo "OPENAI_API_KEY = "sk-proj-...."" >> .env  
+echo 'OPENAI_API_KEY = "sk-proj-...."' >> .env  
 # paste your path for the saved document file within ""
-echo "DOCS_PATH = "..." " >> .env  
+echo 'DOCS_PATH = "..."' >> .env  
 # paste your choraDB storage directory path within ""
-echo "CHROMA_PERSIST_DIR = "..." " >> .env 
+echo 'CHROMA_PERSIST_DIR = "..."' >> .env 
+```
+
+## 8. Prepare your API documentation files
+
+Place your API Documents file (.html / .md) inside the docs directory
+
+## 9. Local LLM Model
+
+Download and Install https://ollama.com/
+
+```bash
+# open cmd terminal & activate ollama
+ollama run llama3.2
 ```
 
