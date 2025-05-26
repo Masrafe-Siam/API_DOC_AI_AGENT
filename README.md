@@ -89,3 +89,19 @@ mkdir docs
 mkdir chroma_store
 ```
 
+## 6. Create Environment Variables File
+
+```bash
+touch .env
+```
+
+## 7 . Add Environment Variables
+
+```bash
+echo "OPENAI_MODEL_NAME=gpt-3.5-turbo" >> .env  # use gpt-4o
+echo "OLLAMA_MODEL=llama3" >> .env  # for local llm model
+echo "OPENAI_API_KEY = "sk-proj-...."" >> .env  # Enter you OPENAI key
+echo "DOCS_PATH = ".\\Api_Doc_Ai_agent\\Agent\\docs\\Stripe API Reference.html"" >> .env  # use this if using stripe Api reference.html file
+echo "CHROMA_PERSIST_DIR = ".\\Api_Doc_Ai_agent\\Agent\\chroma_store"" >> .env #used for choraDB storage
+```
+
